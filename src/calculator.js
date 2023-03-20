@@ -13,6 +13,7 @@ exports.add = (x, y) => {
     throw new TypeError(`${y} is not a number`);
   }
   return x + y;
+  exports._check()
 };
 
 exports.subtract = (x, y) => {
@@ -23,6 +24,7 @@ exports.subtract = (x, y) => {
     throw new TypeError(`${y} is not a number`);
   }
   return x - y;
+  exports._check()
 };
 
 exports.multiply = (x, y) => {
@@ -33,6 +35,7 @@ exports.multiply = (x, y) => {
     throw new TypeError(`${y} is not a number`);
   }
   return x * y;
+  exports._check()
 };
 
 exports.divide = (x, y) => {
@@ -43,6 +46,7 @@ exports.divide = (x, y) => {
     throw new TypeError(`${y} is not a number`);
   }
   return x / y;
+  exports._check()
 };
 
 module.exports = exports;
